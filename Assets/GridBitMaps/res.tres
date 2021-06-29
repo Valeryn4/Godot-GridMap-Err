@@ -1,0 +1,386 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://Assets/GridMapBitMapGenerator/GridBitMap.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+mode = 1
+meshlib_path = "res://Assets/MeshLibrarys/WallsAndDoorsPrototype.meshlib"
+mesh_data = {
+0: {
+"Base": [ {
+"id": 20,
+"layer": "Base",
+"rot": 0,
+"var": 0
+} ]
+},
+2: {
+"Base": [ {
+"id": 1,
+"layer": "Base",
+"rot": 0,
+"var": 0
+} ]
+},
+8: {
+"Base": [ {
+"id": 1,
+"layer": "Base",
+"rot": 16,
+"var": 0
+} ]
+},
+10: {
+"Base": [ {
+"id": 27,
+"layer": "Base",
+"rot": 16,
+"var": 0
+} ]
+},
+11: {
+"Base": [ {
+"id": 30,
+"layer": "Base",
+"rot": 16,
+"var": 0
+} ]
+},
+16: {
+"Base": [ {
+"id": 1,
+"layer": "Base",
+"rot": 22,
+"var": 0
+} ]
+},
+18: {
+"Base": [ {
+"id": 27,
+"layer": "Base",
+"rot": 0,
+"var": 0
+} ]
+},
+22: {
+"Base": [ {
+"id": 30,
+"layer": "Base",
+"rot": 0,
+"var": 0
+} ]
+},
+24: {
+"Base": [ {
+"id": 31,
+"layer": "Base",
+"rot": 10,
+"var": 0
+} ]
+},
+26: {
+"Base": [ {
+"id": 21,
+"layer": "Base",
+"rot": 0,
+"var": 0
+} ]
+},
+27: {
+"Base": [ {
+"id": 26,
+"layer": "Base",
+"rot": 0,
+"var": 0
+} ]
+},
+30: {
+"Base": [ {
+"id": 29,
+"layer": "Base",
+"rot": 0,
+"var": 0
+} ]
+},
+31: {
+"Base": [ {
+"id": 32,
+"layer": "Base",
+"rot": 0,
+"var": 0
+} ]
+},
+64: {
+"Base": [ {
+"id": 1,
+"layer": "Base",
+"rot": 10,
+"var": 0
+} ]
+},
+66: {
+"Base": [ {
+"id": 31,
+"layer": "Base",
+"rot": 22,
+"var": 0
+} ]
+},
+72: {
+"Base": [ {
+"id": 27,
+"layer": "Base",
+"rot": 10,
+"var": 0
+} ]
+},
+74: {
+"Base": [ {
+"id": 21,
+"layer": "Base",
+"rot": 16,
+"var": 0
+} ]
+},
+75: {
+"Base": [ {
+"id": 29,
+"layer": "Base",
+"rot": 16,
+"var": 0
+} ]
+},
+80: {
+"Base": [ {
+"id": 27,
+"layer": "Base",
+"rot": 22,
+"var": 0
+} ]
+},
+82: {
+"Base": [ {
+"id": 21,
+"layer": "Base",
+"rot": 22,
+"var": 0
+} ]
+},
+86: {
+"Base": [ {
+"id": 26,
+"layer": "Base",
+"rot": 22,
+"var": 0
+} ]
+},
+88: {
+"Base": [ {
+"id": 21,
+"layer": "Base",
+"rot": 10,
+"var": 0
+} ]
+},
+90: {
+"Base": [ {
+"id": 28,
+"layer": "Base",
+"rot": 10,
+"var": 0
+} ]
+},
+91: {
+"Base": [ {
+"id": 25,
+"layer": "Base",
+"rot": 16,
+"var": 0
+} ]
+},
+94: {
+"Base": [ {
+"id": 25,
+"layer": "Base",
+"rot": 0,
+"var": 0
+} ]
+},
+95: {
+"Base": [ {
+"id": 22,
+"layer": "Base",
+"rot": 0,
+"var": 0
+} ]
+},
+104: {
+"Base": [ {
+"id": 30,
+"layer": "Base",
+"rot": 10,
+"var": 0
+} ]
+},
+106: {
+"Base": [ {
+"id": 26,
+"layer": "Base",
+"rot": 16,
+"var": 0
+} ]
+},
+107: {
+"Base": [ {
+"id": 32,
+"layer": "Base",
+"rot": 16,
+"var": 0
+} ]
+},
+120: {
+"Base": [ {
+"id": 29,
+"layer": "Base",
+"rot": 10,
+"var": 0
+} ]
+},
+122: {
+"Base": [ {
+"id": 25,
+"layer": "Base",
+"rot": 10,
+"var": 0
+} ]
+},
+123: {
+"Base": [ {
+"id": 22,
+"layer": "Base",
+"rot": 16,
+"var": 0
+} ]
+},
+126: {
+"Base": [ {
+"id": 2,
+"layer": "Base",
+"rot": 16,
+"var": 0
+} ]
+},
+127: {
+"Base": [ {
+"id": 24,
+"layer": "Base",
+"rot": 16,
+"var": 0
+} ]
+},
+208: {
+"Base": [ {
+"id": 30,
+"layer": "Base",
+"rot": 22,
+"var": 0
+} ]
+},
+210: {
+"Base": [ {
+"id": 29,
+"layer": "Base",
+"rot": 22,
+"var": 0
+} ]
+},
+214: {
+"Base": [ {
+"id": 32,
+"layer": "Base",
+"rot": 22,
+"var": 0
+} ]
+},
+216: {
+"Base": [ {
+"id": 26,
+"layer": "Base",
+"rot": 10,
+"var": 0
+} ]
+},
+218: {
+"Base": [ {
+"id": 25,
+"layer": "Base",
+"rot": 22,
+"var": 0
+} ]
+},
+219: {
+"Base": [ {
+"id": 2,
+"layer": "Base",
+"rot": 0,
+"var": 0
+} ]
+},
+222: {
+"Base": [ {
+"id": 22,
+"layer": "Base",
+"rot": 22,
+"var": 0
+} ]
+},
+223: {
+"Base": [ {
+"id": 24,
+"layer": "Base",
+"rot": 0,
+"var": 0
+} ]
+},
+248: {
+"Base": [ {
+"id": 32,
+"layer": "Base",
+"rot": 10,
+"var": 0
+} ]
+},
+250: {
+"Base": [ {
+"id": 22,
+"layer": "Base",
+"rot": 10,
+"var": 0
+} ]
+},
+251: {
+"Base": [ {
+"id": 24,
+"layer": "Base",
+"rot": 10,
+"var": 0
+} ]
+},
+254: {
+"Base": [ {
+"id": 24,
+"layer": "Base",
+"rot": 22,
+"var": 0
+} ]
+},
+255: {
+"Base": [ {
+"id": 33,
+"layer": "Base",
+"rot": 0,
+"var": 0
+} ]
+}
+}

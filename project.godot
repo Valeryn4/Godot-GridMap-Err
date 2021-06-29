@@ -1,0 +1,157 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Reference",
+"class": "ByteGrid",
+"language": "GDScript",
+"path": "res://Assets/MapData/ByteGrid.gd"
+}, {
+"base": "Reference",
+"class": "ByteMatrix",
+"language": "GDScript",
+"path": "res://Assets/MapData/ByteMatrix.gd"
+}, {
+"base": "Reference",
+"class": "DWordMatrix",
+"language": "GDScript",
+"path": "res://Assets/MapData/DWordMatrix.gd"
+}, {
+"base": "Resource",
+"class": "GridBitMap",
+"language": "GDScript",
+"path": "res://Assets/GridMapBitMapGenerator/GridBitMap.gd"
+}, {
+"base": "Reference",
+"class": "GridConsts",
+"language": "GDScript",
+"path": "res://Assets/Grid/GridConsts.gd"
+}, {
+"base": "Reference",
+"class": "GridData",
+"language": "GDScript",
+"path": "res://Assets/Grid/GridData.gd"
+}, {
+"base": "Reference",
+"class": "GridTransform",
+"language": "GDScript",
+"path": "res://Assets/Grid/GridTransform.gd"
+}, {
+"base": "Reference",
+"class": "IWorks",
+"language": "GDScript",
+"path": "res://Assets/Enemy/Works/IWorks.gd"
+}, {
+"base": "InputEventAction",
+"class": "InputEventGrid",
+"language": "GDScript",
+"path": "res://Assets/Cursor/InputEventGrid.gd"
+}, {
+"base": "InputEventGrid",
+"class": "InputEventGridButton",
+"language": "GDScript",
+"path": "res://Assets/Cursor/InputEventGridButton.gd"
+}, {
+"base": "InputEventGrid",
+"class": "InputEventGridMotion",
+"language": "GDScript",
+"path": "res://Assets/Cursor/InputEventGridMovement.gd"
+}, {
+"base": "Node",
+"class": "PathfindAsync",
+"language": "GDScript",
+"path": "res://Assets/PathfindAsync/PathfindAsync.gd"
+}, {
+"base": "Reference",
+"class": "PathfindRequest",
+"language": "GDScript",
+"path": "res://Assets/PathfindAsync/PathfindRequest.gd"
+}, {
+"base": "PathfindRequest",
+"class": "PathfindRequestGetPath",
+"language": "GDScript",
+"path": "res://Assets/PathfindAsync/PathfindRequestGetPath.gd"
+}, {
+"base": "PathfindRequest",
+"class": "PathfindRequestGetPoints",
+"language": "GDScript",
+"path": "res://Assets/PathfindAsync/PathfindRequestGetPoints.gd"
+}, {
+"base": "KinematicBody",
+"class": "SCPEnemy",
+"language": "GDScript",
+"path": "res://Assets/Enemy/Enemy.gd"
+}, {
+"base": "SCPObject",
+"class": "SCPInteractiveObject",
+"language": "GDScript",
+"path": "res://Assets/Objects/SCPInteractiveObject.gd"
+}, {
+"base": "Spatial",
+"class": "SCPObject",
+"language": "GDScript",
+"path": "res://Assets/Objects/SCPObject.gd"
+}, {
+"base": "IWorks",
+"class": "WorkMoveTo",
+"language": "GDScript",
+"path": "res://Assets/Enemy/Works/WorkMoveTo.gd"
+}, {
+"base": "IWorks",
+"class": "WorkSequence",
+"language": "GDScript",
+"path": "res://Assets/Enemy/Works/WorkSequence.gd"
+} ]
+_global_script_class_icons={
+"ByteGrid": "",
+"ByteMatrix": "",
+"DWordMatrix": "",
+"GridBitMap": "",
+"GridConsts": "",
+"GridData": "",
+"GridTransform": "",
+"IWorks": "",
+"InputEventGrid": "",
+"InputEventGridButton": "",
+"InputEventGridMotion": "",
+"PathfindAsync": "",
+"PathfindRequest": "",
+"PathfindRequestGetPath": "",
+"PathfindRequestGetPoints": "",
+"SCPEnemy": "",
+"SCPInteractiveObject": "",
+"SCPObject": "",
+"WorkMoveTo": "",
+"WorkSequence": ""
+}
+
+[application]
+
+config/name="SCP Manager"
+run/main_scene="res://Assets/Test.tscn"
+config/icon="res://icon.png"
+
+[debug]
+
+gdscript/warnings/return_value_discarded=false
+
+[editor_plugins]
+
+enabled=PoolStringArray( "GridMap-Auto-Tile" )
+
+[layer_names]
+
+3d_physics/layer_1="World"
+3d_physics/layer_2="Enemy"
+3d_physics/layer_3="Object"
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"

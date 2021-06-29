@@ -1,0 +1,151 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Assets/UIBuilder/UIBuilder.gd" type="Script" id=1]
+
+[node name="UIBuilder" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_constants/separation = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer"]
+margin_right = 844.0
+margin_bottom = 600.0
+size_flags_horizontal = 3
+
+[node name="Header" type="ColorRect" parent="HBoxContainer/VBoxContainer"]
+margin_right = 844.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 0, 40 )
+color = Color( 0, 0, 0, 0.666667 )
+
+[node name="Control" type="Control" parent="HBoxContainer/VBoxContainer"]
+margin_top = 44.0
+margin_right = 844.0
+margin_bottom = 566.0
+focus_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Bottom" type="ColorRect" parent="HBoxContainer/VBoxContainer"]
+margin_top = 570.0
+margin_right = 844.0
+margin_bottom = 600.0
+rect_min_size = Vector2( 0, 30 )
+color = Color( 0, 0, 0, 0.666667 )
+
+[node name="Panel" type="ColorRect" parent="HBoxContainer"]
+margin_left = 844.0
+margin_right = 1024.0
+margin_bottom = 600.0
+rect_min_size = Vector2( 180, 0 )
+color = Color( 0, 0, 0, 0.666667 )
+
+[node name="VBox" type="VBoxContainer" parent="HBoxContainer/Panel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 10.0
+margin_top = 10.0
+margin_right = -10.0
+margin_bottom = -10.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxSetup" type="HBoxContainer" parent="HBoxContainer/Panel/VBox"]
+margin_right = 160.0
+margin_bottom = 24.0
+
+[node name="CheckBoxSetup" type="CheckBox" parent="HBoxContainer/Panel/VBox/HBoxSetup"]
+margin_right = 24.0
+margin_bottom = 24.0
+pressed = true
+action_mode = 0
+
+[node name="Label" type="Label" parent="HBoxContainer/Panel/VBox/HBoxSetup"]
+margin_left = 28.0
+margin_top = 5.0
+margin_right = 96.0
+margin_bottom = 19.0
+text = "SET BLOCK"
+
+[node name="HBoxDestroy" type="HBoxContainer" parent="HBoxContainer/Panel/VBox"]
+margin_top = 28.0
+margin_right = 160.0
+margin_bottom = 52.0
+
+[node name="CheckBoxDestroy" type="CheckBox" parent="HBoxContainer/Panel/VBox/HBoxDestroy"]
+margin_right = 24.0
+margin_bottom = 24.0
+action_mode = 0
+
+[node name="Label" type="Label" parent="HBoxContainer/Panel/VBox/HBoxDestroy"]
+margin_left = 28.0
+margin_top = 5.0
+margin_right = 128.0
+margin_bottom = 19.0
+text = "REMOVE BLOCK"
+
+[node name="HBoxSetupObject" type="HBoxContainer" parent="HBoxContainer/Panel/VBox"]
+margin_top = 56.0
+margin_right = 160.0
+margin_bottom = 80.0
+
+[node name="CheckBoxStupObject" type="CheckBox" parent="HBoxContainer/Panel/VBox/HBoxSetupObject"]
+margin_right = 24.0
+margin_bottom = 24.0
+action_mode = 0
+
+[node name="Label" type="Label" parent="HBoxContainer/Panel/VBox/HBoxSetupObject"]
+margin_left = 28.0
+margin_top = 5.0
+margin_right = 85.0
+margin_bottom = 19.0
+text = "SET UNIT"
+
+[node name="HBoxSetPath" type="HBoxContainer" parent="HBoxContainer/Panel/VBox"]
+margin_top = 84.0
+margin_right = 160.0
+margin_bottom = 108.0
+
+[node name="CheckBoxSetPath" type="CheckBox" parent="HBoxContainer/Panel/VBox/HBoxSetPath"]
+margin_right = 24.0
+margin_bottom = 24.0
+action_mode = 0
+
+[node name="Label" type="Label" parent="HBoxContainer/Panel/VBox/HBoxSetPath"]
+margin_left = 28.0
+margin_top = 5.0
+margin_right = 87.0
+margin_bottom = 19.0
+text = "SET PATH"
+
+[node name="Control" type="Control" parent="HBoxContainer/Panel/VBox"]
+margin_top = 112.0
+margin_right = 160.0
+margin_bottom = 556.0
+size_flags_vertical = 3
+
+[node name="Button" type="Button" parent="HBoxContainer/Panel/VBox"]
+margin_top = 560.0
+margin_right = 160.0
+margin_bottom = 580.0
+text = "Clear"
+
+[connection signal="mouse_entered" from="HBoxContainer/VBoxContainer/Control" to="." method="_on_Control_mouse_entered"]
+[connection signal="mouse_exited" from="HBoxContainer/VBoxContainer/Control" to="." method="_on_Control_mouse_exited"]
+[connection signal="toggled" from="HBoxContainer/Panel/VBox/HBoxSetup/CheckBoxSetup" to="." method="_on_CheckBoxSetup_toggled"]
+[connection signal="toggled" from="HBoxContainer/Panel/VBox/HBoxDestroy/CheckBoxDestroy" to="." method="_on_CheckBoxDestroy_toggled"]
+[connection signal="toggled" from="HBoxContainer/Panel/VBox/HBoxSetupObject/CheckBoxStupObject" to="." method="_on_CheckBoxStupObject_toggled"]
+[connection signal="toggled" from="HBoxContainer/Panel/VBox/HBoxSetPath/CheckBoxSetPath" to="." method="_on_CheckBoxSetPath_toggled"]
+[connection signal="pressed" from="HBoxContainer/Panel/VBox/Button" to="." method="_on_Button_pressed"]

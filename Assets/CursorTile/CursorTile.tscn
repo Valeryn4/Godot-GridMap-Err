@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Assets/CursorTile/CursorTile.gd" type="Script" id=4]
+
+[node name="CursorTile" type="Spatial"]
+script = ExtResource( 4 )
